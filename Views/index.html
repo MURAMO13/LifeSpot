@@ -5,25 +5,30 @@
     <title>LifeSpot</title>
     <!--Подключение стилей по относительному пути из внешнего файла-->
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
+    <script src="../Static/JS/index.js"></script>
+    <script>
+        // let session = handleSession();
+        // sessionLog(session)
+
+        // Функция объявлена через declaration
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+    </script>
 
 </head>
-
+<!--SIDEBAR-->
 <body>
     <header id="header-index">
+
+
+
         <!--Заголовок страницы-->
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <!--Параграф-->
         <p>Покажем, что происходит прямо сейчас</p>
     </header>
-    <aside id="sidebar">
-        <div class="navbar">
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Поиск видео...">
-            </div>
-            <a href="/"><p>Все трансляции</p></a>
-            <a href="/"><p>О проекте</p></a>
-        </div>
-    </aside>
+
     <div class="bordered">
 
         <div class="video-container">
@@ -43,6 +48,10 @@
         <p>LifeSpot - все права защищены</p>
         <p>Связаться с нами: contact@lifespot.ru</p>
     </footer>
+
+
 </body>
+
+<!--FOOTER-->
 
 </html>
